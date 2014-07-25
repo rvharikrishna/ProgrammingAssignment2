@@ -50,7 +50,7 @@ cacheSolve <- function(x, ...) {
     mat <- x$get()
 
     ## inverse calculation step
-    m <- solve(mat) %*% mat
+    m <- solve(mat)
 
     ## set the inverse 
     x$setinverse(m)
